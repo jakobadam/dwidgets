@@ -4,7 +4,7 @@ define([
 'dojo/text!./templates/TextBox.html'
 ], function(declare, TextBox, template){
 
-    return declare('form.TextBox', [TextBox], {
+    return declare('dwidgets.form.TextBox', [TextBox], {
         templateString: template,
 
         postCreate: function(){

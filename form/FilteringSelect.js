@@ -1,11 +1,11 @@
 define([
 'dojo/_base/declare',
 'dijit/form/FilteringSelect',
-'form/TextBox',
+'dwidgets/form/TextBox',
 'dojo/text!./templates/DropDownBox.html'
 ], function(declare, FilteringSelect, TextBox, template){
 
-    return declare('form.FilteringSelect', [FilteringSelect, TextBox], {
+    return declare('dwidgets.form.FilteringSelect', [FilteringSelect, TextBox], {
 
         templateString: template,
 
