@@ -19,7 +19,21 @@
     </script>
 
     <style>
-
+      .marketing{
+      margin: 36px 0 27px;
+      }
+      .marketing h1 {
+      font-size: 40px;
+      font-weight: 300;
+      }
+      .marketing-byline {
+        margin: -18px 0 27px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #999;
+        text-align: center;
+      }
       .footer {
       margin-top: 45px;
       padding: 35px 0 36px;
@@ -42,16 +56,20 @@
 
   <body class="tundra form container">
 
-
-    <div class="page-header">
+    <div class="marketing">
       <div class="nav nav-pills pull-right">
         <script>
           theme ?
-              document.write('<a href="?">Normal theme</a>') :
-              document.write('<a href="?theme=tundra">Tundra theme</a>');
+          document.write('<a href="?">Normal theme</a>') :
+          document.write('<a href="?theme=tundra">Old Tundra theme</a>');
         </script>
       </div>
 
+      <h1>Dwidgets <small>Improved dojo widgets</small></h1>
+    </div>
+
+
+    <div class="page-header">
       <h1>Textboxes <small>With user friendly deselect</small></h1>
     </div>
 
@@ -188,6 +206,7 @@
       target="_blank">Dojo license</a>. Documentation licensed
       under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
       <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      <p>Styles from <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
     </div>
 
     <script src="test.js"></script>

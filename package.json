@@ -1,0 +1,6 @@
+{
+  "name":"dwidgets",
+  "description":"Improved dojo widgets",
+  "version":0.1,
+  "dojoBuild":"dwidgets.profile.js"
+}
