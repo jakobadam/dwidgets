@@ -1,0 +1,43 @@
+.tundra .dijitCloseButtonContainer{
+  	float: right;
+    margin-right:2px;
+}
+
+.tundra .dijitCloseButtonInner{
+  direction: ltr !important;
+  text-align: left !important;
+  text-indent: -1em !important;
+  background-color:transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons.png");
+  background-position: -68px center;
+  width: 14px;
+  cursor:pointer;
+}
+
+.tundra .dijitTextBox{
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.tundra .queryTextBox{
+  background: #FFF url("../img/searchIcon.png") no-repeat 0 center;
+  padding-left: 16px;
+}
+
+.tundra .dijitTextBox.expandableMinimal{
+  width:20px;
+}
+
+.tundra .dijitTextBoxFocused.expandableMinimal{
+  width:200px;
+}
+
+.tundra .dijitTextBox.expandable{
+  width:50px;
+}
+
+.tundra .dijitTextBoxFocused.expandable{
+  width:200px;
+}

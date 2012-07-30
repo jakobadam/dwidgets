@@ -1,0 +1,145 @@
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input:-moz-placeholder {
+  color: #999;
+}
+
+.form .dijitCloseButtonContainer{
+  float:right;
+}
+
+.form .dijitCloseButtonInner{
+	text-indent: -2em !important;
+	direction: ltr !important;
+	text-align: left !important;
+	height: auto !important;
+	#text-indent: 0 !important;
+	#letter-spacing: -5em !important;
+	#text-align: right !important;
+
+
+  background: transparent url("../img/icons.png") no-repeat -67px center;
+  width: 14px;
+  cursor:pointer;
+}
+
+.form .dijitTextBox .dijitArrowButtonInner{
+  text-indent: -1em !important;
+
+  background: transparent url("../img/icons.png") no-repeat -23px center;
+  width:14px;
+  margin:0px;
+}
+
+.form .dijitHasDropDownOpen .dijitArrowButtonInner{
+  /* the dijitHasDropDownOpen class is set by dijit
+     when the dropdown is open*/
+  background: transparent url("../img/icons.png") no-repeat -2px center;
+}
+
+.form .dijitButtonNode, .form .dijitTextBox .dijitButtonNode{
+  /* remove styles from tundra*/
+  border: none;
+  padding:0;
+  background:none;
+}
+
+.form .dijitValidationIcon{
+  /* class set by dijit when validation fails*/
+  background: transparent url("../img/icons.png") no-repeat -88px center;
+  width:14px;
+}
+
+.form .dijitTooltipContainer{
+  background-image:none;
+  border: 1px solid #6dcff6;
+  background-color:white;
+
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+.form .dijitTextBox{
+  /* background: #626262 url("../img/searchIcon.png") no-repeat 9px center; */
+  border: solid 1px #151515;
+  padding: 4px 10px 4px 10px;
+  width:100px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.form .queryTextBox{
+  background: #FFF url("../img/searchIcon.png") no-repeat 9px center;
+  padding: 4px 10px 4px 30px;
+}
+
+.form .dijitTextBox.expandableMinimal{
+  width:20px;
+}
+
+.form .dijitTextBoxFocused.expandableMinimal{
+  width:200px;
+}
+
+.form .dijitTextBox.expandable{
+  width:50px;
+}
+
+.form .dijitTextBoxFocused.expandable{
+  width:200px;
+}
+
+.form .dijitTextBoxFocused {
+	background-color: #fff;
+	border-color: #6dcff6;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+.form .dijitMenu, .form .dijitMenuBar{
+  border:1px solid #6dcff6;
+  padding:2px;
+
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+  background-color:#FFF;
+  z-index:1050;
+}
+
+.form .dijitMenuItemHover, .tundra .dijitMenuItemSelected {
+  background-color: #6dcff6;
+  color: white;
+}
+
+/* .form .dijitComboButtonFocused{ */
+  
+/* } */
+
+.form .dijitButtonNodeHover,
+.form .dijitToggleButtonHover .dijitButtonNode,
+.form .dijitDropDownButtonHover .dijitButtonNode,
+.form .dijitComboButton .dijitButtonContentsHover,
+.form .dijitComboButton .dijitDownArrowButtonHover {
+	/* hover state - inner */
+	/* TODO: change from Hover to Selected so that button is still highlighted while drop down is being used */
+	border-color: #a5beda;
+	border-bottom-color:#5c7590;
+	color:red;
+	background:none;
+    cursor:pointer;
+}
+
+.form .dijitComboButton, .form .dijitArrowButton, .form .dijitArrowDownButton{
+  color: #08C;
+}
+

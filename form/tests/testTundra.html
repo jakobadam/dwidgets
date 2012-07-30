@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Widgets Test</title>
+    <link rel="stylesheet" href="/dijit/themes/dijit.css" />
+    <link rel="stylesheet" href="/dijit/themes/tundra/tundra.css"/>
+
+    <link rel="stylesheet" href="/dojox/highlight/resources/highlight.css" />
+    <link rel="stylesheet" href="/dojox/highlight/resources/pygments/colorful.css" />
+
+    <link rel="stylesheet" href="/dwidgets/form/css/bootstrap.css"/>
+
+    <!-- this is changed from form.css to tundra.css -->
+    <link rel="stylesheet" href="/dwidgets/form/css/tundra.css"/>
+    <style>
+      /* overwrite input styles from bootstrap */
+      .form input, .form input:focus{
+        border: none;
+        padding:0;
+        margin:0;
+        height:auto;
+
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow:none;
+      }
+
+      .footer {
+        margin-top: 45px;
+        padding: 35px 0 36px;
+        border-top: 1px solid #E5E5E5;
+      }
+    </style>
+
+    <script>
+      var djConfig = {
+        debug:1,
+        async: 1,
+        packages: [{
+          location: '/form',
+          name: 'form'
+        }]
+      };
+    </script>
+    <script src="/dojo/dojo.js"></script>
+  </head>
+
+  <body class="tundra form container">
+
+
+    <div class="page-header">
+      <div class="nav nav-pills pull-right">
+        <a href="test.html">Normal theme</a>
+      </div>
+
+      <h1>Textboxes <small>With user friendly deselect</small></h1>
+    </div>
+
+    <div class="row">
+      <div class="span6">
+        <h3>Textbox</h3>
+        <p>A plain textbox with a deselect option when a value is present</p>
+
+        <div id="textbox" class="dijitTextBox">
+
+          <!--
+          include so widget is shown before js load
+          -->
+
+          <div class="dijitInputField dijitInputContainer">
+            <input class="dijitInputInner" type="text" disabled="disabled"></input>
+          </div>
+        </div>
+
+        <h3>Textbox with preset value</h3>
+        <p>With an initial value</p>
+
+        <div id="textbox_with_preset_value" class="dijitTextBox">
+          <div class="dijitInputField dijitInputContainer">
+            <input class="dijitInputInner" type="text" value="1" disabled="disabled"></input>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="span6">
+        <h3>Expandable Textbox</h3>
+        <p>Add <code>.expandableMinimal</code> to make the textbox
+          expandable and of initial minimal size. Or define the width yourself:</p>
+        <pre><code>.form .dijitTextBox.expandableMinimal{
+  width:20px;
+}
+
+.form .dijitTextBoxFocused.expandableMinimal{
+  width:200px;
+}</code></pre>
+
+        <div id="textbox_expandable" class="expandableMinimal dijitTextBox" >
+          <div class="dijitInputContainer">
+            <input class="dijitInputInner" type="text" disabled="disabled"></input>
+          </div>
+        </div>
+
+        <h3>Expandable Textbox with query icon</h3>
+        <p>Add <code>.queryTextBox</code> to put a query icon in the textbox.</p>
+
+        <div id="textbox_expandable_query" class="expandableMinimal queryTextBox dijitTextBox" >
+          <div class="dijitReset dijitInputField dijitInputContainer">
+            <input class="dijitReset dijitInputInner" type="text" value="" disabled="disabled"></input>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h1>Filtering Selects <small>Cool and easy to use</small></h1>
+    </div>
+
+    <div class="row">
+      <div class="span6">
+        <p>The behaviours from the TextBox are available in the filtering select
+        since it inherits from the <code>TextBox</code></p>
+
+        <h3>Filtering Select</h3>
+
+        <div id="filtering_select" class="queryTextBox dijitTextBox dijitComboBox" style="width: 200px; ">
+          <div class="dijitReset dijitButtonNode dijitDownArrowButton dijitArrowButtonContainer">
+            <input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text"></input>
+          </div>
+          <div class="dijitInputContainer">
+            <input class="dijitInputInner" type="text" placeholder="Search"></input>
+          </div>
+        </div>
+
+        <h3>With a preset value</h3>
+
+        <div id="filtering_select_with_preset_value" class="dijitTextBox dijitComboBox">
+
+          <div class="dijitButtonNode dijitDownArrowButton dijitArrowButtonContainer">
+            <input class="dijitInputField dijitArrowButtonInner" value="▼ " type="text"></input>
+          </div>
+
+          <div class="dijitCloseButton dijitCloseButtonContainer">
+	        <input class="dijitInputField dijitCloseButtonInner"
+                   value="✘ " type="text" readonly="readonly" ></input>
+          </div>
+
+          <div class="dijitReset dijitInputField dijitInputContainer">
+            <input class="dijitInputInner" type="text" value="One"></input>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="span6">
+
+        <h3>Expandable</h3>
+
+        <div id="filtering_select_expandable" class="dijitInline dijitLeft expandable queryTextBox dijitTextBox dijitComboBox">
+
+          <div class="dijitButtonNode dijitDownArrowButton dijitArrowButtonContainer">
+            <input class="dijitInputField dijitArrowButtonInner" value="▼ " type="text" readonly="readonly"></input>
+          </div>
+
+          <div class="dijitInputField dijitInputContainer">
+            <input class="dijitReset dijitInputInner" type="text" value=""></input>
+          </div>
+
+        </div>
+
+        <p>The filtering select is created programmatically like:
+<pre><code>new FilteringSelect({
+  store:store,
+  'class':'expandable queryTextBox'
+}, 'filtering_select_expandable');
+</code></pre>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>Code licensed under
+      the <a href="http://dojotoolkit.org/license"
+      target="_blank">Dojo license</a>. Documentation licensed
+      under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </div>
+
+    <script src="test.js"></script>
+
+  </body>
+</html>
