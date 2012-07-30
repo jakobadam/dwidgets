@@ -28,7 +28,7 @@ define([
             this.set('value', '');
         },
 
-        _setValueAttr: function(val){
+        _handleOnChange: function(val){
             this.inherited(arguments);
             this.toggleDeselectButton();
         },
