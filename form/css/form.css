@@ -5,6 +5,18 @@ input:-moz-placeholder {
   color: #999;
 }
 
+/* overwrite input styles from bootstrap */
+.form input, .form input:focus{
+  border: none;
+  padding:0;
+  margin:0;
+  height:auto;
+
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+
 .form .dijitCloseButtonContainer{
   float:right;
 }
@@ -53,31 +65,49 @@ input:-moz-placeholder {
 
 .form .dijitTooltipContainer{
   background-image:none;
-  border: 1px solid #6dcff6;
+  border: 1px solid rgba(82, 168, 236, 0.8);
   background-color:white;
 
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  box-shadow: 0 0 5px rgba(109,207,246,.5);
+     -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+          box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
 .form .dijitTextBox{
-  /* background: #626262 url("../img/searchIcon.png") no-repeat 9px center; */
-  border: solid 1px #151515;
-  padding: 4px 10px 4px 10px;
-  width:100px;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
+  background:none;
 
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  transition: all .2s;
+  border: 1px solid #DDD;
+  padding: 4px;
+  width:100px;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
 }
 
 .form .queryTextBox{
-  background: #FFF url("../img/searchIcon.png") no-repeat 9px center;
-  padding: 4px 10px 4px 30px;
+  background: #FFF url("../img/searchIcon.png") no-repeat 7px center;
+  padding: 4px 10px 4px 25px;
+}
+
+.form .roundTextBox{
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
 }
 
 .form .dijitTextBox.expandableMinimal{
@@ -97,33 +127,39 @@ input:-moz-placeholder {
 }
 
 .form .dijitTextBoxFocused {
-	background-color: #fff;
-	border-color: #6dcff6;
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
 
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.form .dijitPopup{
 }
 
 .form .dijitMenu, .form .dijitMenuBar{
   border:1px solid #6dcff6;
   padding:2px;
-
-  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  box-shadow: 0 0 5px rgba(109,207,246,.5);
   background-color:#FFF;
   z-index:1050;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
 }
 
 .form .dijitMenuItemHover, .tundra .dijitMenuItemSelected {
   background-color: #6dcff6;
   color: white;
 }
-
-/* .form .dijitComboButtonFocused{ */
-  
-/* } */
 
 .form .dijitButtonNodeHover,
 .form .dijitToggleButtonHover .dijitButtonNode,

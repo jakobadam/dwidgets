@@ -10,20 +10,15 @@
     <link rel="stylesheet" href="/dojox/highlight/resources/pygments/colorful.css" />
 
     <link rel="stylesheet" href="/dwidgets/form/css/bootstrap.css"/>
-    <link rel="stylesheet" href="/dwidgets/form/css/form.css"/>
+
+    <script>
+      var theme = (location.search.indexOf('theme') !== -1);
+  	  theme ?
+         document.write('<link rel="stylesheet" href="/dwidgets/form/css/tundra.css" \/>') :
+         document.write('<link rel="stylesheet" href="/dwidgets/form/css/form.css" \/>');
+    </script>
 
     <style>
-      /* overwrite input styles from bootstrap */
-      .form input, .form input:focus{
-        border: none;
-        line-height:inherit;
-        padding:0;
-        margin:0;
-
-        -webkit-box-shadow:none;
-        box-shadow:none;
-        -moz-box-shadow:none;
-      }
 
       .footer {
       margin-top: 45px;
@@ -50,7 +45,11 @@
 
     <div class="page-header">
       <div class="nav nav-pills pull-right">
-        <a href="testTundra.html">Tundra theme</a>
+        <script>
+          theme ?
+              document.write('<a href="?">Normal theme</a>') :
+              document.write('<a href="?theme=tundra">Tundra theme</a>');
+        </script>
       </div>
 
       <h1>Textboxes <small>With user friendly deselect</small></h1>
@@ -98,16 +97,17 @@
   width:200px;
 }</code></pre>
 
-        <div id="textbox_expandable" class="expandableMinimal dijitTextBox" >
+        <div id="textbox_expandable" class="expandableMinimal dijitTextBox " >
           <div class="dijitInputContainer">
             <input class="dijitInputInner" type="text" disabled="disabled"></input>
           </div>
         </div>
 
         <h3>Expandable Textbox with query icon</h3>
-        <p>Add <code>.queryTextBox</code> to put a query icon in the textbox.</p>
+        <p>Add <code>.queryTextBox</code> to put a query icon in the
+        textbox. Add <code>.roundTextBox</code> to make it rounder.</p>
 
-        <div id="textbox_expandable_query" class="expandableMinimal queryTextBox dijitTextBox" >
+        <div id="textbox_expandable_query" class="roundTextBox expandableMinimal queryTextBox dijitTextBox" >
           <div class="dijitReset dijitInputField dijitInputContainer">
             <input class="dijitReset dijitInputInner" type="text" value="" disabled="disabled"></input>
           </div>
@@ -127,7 +127,7 @@
 
         <h3>Filtering Select</h3>
 
-        <div id="filtering_select" class="queryTextBox dijitTextBox" style="width: 200px; ">
+        <div id="filtering_select" class="queryTextBox dijitTextBox dijitComboBox" style="width: 200px; ">
           <div class="dijitButtonNode dijitDownArrowButton dijitArrowButtonContainer">
             <input class="dijitInputField dijitArrowButtonInner" value="▼ " type="text"></input>
           </div>
@@ -138,7 +138,7 @@
 
         <h3>With a preset value</h3>
 
-        <div id="filtering_select_with_preset_value" class="dijitTextBox dijitComboBox dijitValidationTextBox">
+        <div id="filtering_select_with_preset_value" class="dijitTextBox dijitComboBox dijitValidationTextBox dijitComboBox">
 
           <div class="dijitButtonNode dijitDownArrowButton dijitArrowButtonContainer">
             <input class="dijitInputField dijitArrowButtonInner" value="▼ " type="text"></input>
@@ -161,7 +161,7 @@
 
         <h3>Expandable</h3>
 
-        <div id="filtering_select_expandable" class="dijitInline dijitLeft expandable queryTextBox dijitTextBox" >
+        <div id="filtering_select_expandable" class="dijitInline dijitLeft expandable queryTextBox dijitTextBox dijitComboBox" >
 
           <div class="dijitButtonNode dijitDownArrowButton dijitArrowButtonContainer">
             <input class="dijitInputField dijitArrowButtonInner" value="▼ " type="text" readonly="readonly"></input>

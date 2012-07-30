@@ -26,7 +26,7 @@ require([
     }, 'textbox_expandable');
 
     var tb_ex_q = new TextBox({
-        'class': 'expandableMinimal queryTextBox'
+        'class': 'expandableMinimal queryTextBox roundTextBox'
     }, 'textbox_expandable_query');
 
     var fs = new FilteringSelect({

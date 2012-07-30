@@ -1,3 +1,15 @@
+/* overwrite input styles from bootstrap */
+.form input, .form input:focus{
+  border: none;
+  padding:0;
+  margin:0;
+  height:auto;
+
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+
 .tundra .dijitCloseButtonContainer{
   	float: right;
     margin-right:2px;
@@ -40,4 +52,10 @@
 
 .tundra .dijitTextBoxFocused.expandable{
   width:200px;
+}
+
+.tundra .dijitTextBox.roundTextBox{
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
 }
