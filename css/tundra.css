@@ -21,7 +21,7 @@
   text-indent: -1em !important;
   background-color:transparent;
   background-repeat: no-repeat;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -68px center;
   width: 14px;
   cursor:pointer;
@@ -34,7 +34,7 @@
 }
 
 .tundra .queryTextBox{
-  background: #FFF url("../img/searchIcon.png") no-repeat 0 center;
+  background: #FFF url("img/searchIcon.png") no-repeat 0 center;
   padding-left: 16px;
 }
 

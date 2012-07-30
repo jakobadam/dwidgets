@@ -31,7 +31,7 @@ input:-moz-placeholder {
 	#text-align: right !important;
 
 
-  background: transparent url("../img/icons.png") no-repeat -67px center;
+  background: transparent url("img/icons.png") no-repeat -67px center;
   width: 14px;
   cursor:pointer;
 }
@@ -39,7 +39,7 @@ input:-moz-placeholder {
 .form .dijitTextBox .dijitArrowButtonInner{
   text-indent: -1em !important;
 
-  background: transparent url("../img/icons.png") no-repeat -23px center;
+  background: transparent url("img/icons.png") no-repeat -23px center;
   width:14px;
   margin:0px;
 }
@@ -47,7 +47,7 @@ input:-moz-placeholder {
 .form .dijitHasDropDownOpen .dijitArrowButtonInner{
   /* the dijitHasDropDownOpen class is set by dijit
      when the dropdown is open*/
-  background: transparent url("../img/icons.png") no-repeat -2px center;
+  background: transparent url("img/icons.png") no-repeat -2px center;
 }
 
 .form .dijitButtonNode, .form .dijitTextBox .dijitButtonNode{
@@ -59,7 +59,7 @@ input:-moz-placeholder {
 
 .form .dijitValidationIcon{
   /* class set by dijit when validation fails*/
-  background: transparent url("../img/icons.png") no-repeat -88px center;
+  background: transparent url("img/icons.png") no-repeat -88px center;
   width:14px;
 }
 
@@ -100,7 +100,7 @@ input:-moz-placeholder {
 }
 
 .form .queryTextBox{
-  background: #FFF url("../img/searchIcon.png") no-repeat 7px center;
+  background: #FFF url("img/searchIcon.png") no-repeat 7px center;
   padding: 4px 10px 4px 25px;
 }
 
