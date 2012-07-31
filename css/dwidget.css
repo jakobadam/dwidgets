@@ -6,7 +6,7 @@ input:-moz-placeholder {
 }
 
 /* overwrite input styles from bootstrap */
-.form input, .form input:focus{
+.dwidget input, .dwidget input:focus{
   border: none;
   padding:0;
   margin:0;
@@ -18,11 +18,11 @@ input:-moz-placeholder {
           box-shadow:none;
 }
 
-.form .dijitCloseButtonContainer{
+.dwidget .dijitCloseButtonContainer{
   float:right;
 }
 
-.form .dijitCloseButtonInner{
+.dwidget .dijitCloseButtonInner{
 	text-indent: -2em !important;
 	direction: ltr !important;
 	text-align: left !important;
@@ -37,7 +37,7 @@ input:-moz-placeholder {
   cursor:pointer;
 }
 
-.form .dijitTextBox .dijitArrowButtonInner{
+.dwidget .dijitTextBox .dijitArrowButtonInner{
   text-indent: -1em !important;
 
   background: transparent url("img/icons.png") no-repeat -23px center;
@@ -45,26 +45,26 @@ input:-moz-placeholder {
   margin:0px;
 }
 
-.form .dijitHasDropDownOpen .dijitArrowButtonInner{
+.dwidget .dijitHasDropDownOpen .dijitArrowButtonInner{
   /* the dijitHasDropDownOpen class is set by dijit
      when the dropdown is open*/
   background: transparent url("img/icons.png") no-repeat -2px center;
 }
 
-.form .dijitButtonNode, .form .dijitTextBox .dijitButtonNode{
+.dwidget .dijitButtonNode, .dwidget .dijitTextBox .dijitButtonNode{
   /* remove styles from tundra*/
   border: none;
   padding:0;
   background:none;
 }
 
-.form .dijitValidationIcon{
+.dwidget .dijitValidationIcon{
   /* class set by dijit when validation fails*/
   background: transparent url("img/icons.png") no-repeat -88px center;
   width:14px;
 }
 
-.form .dijitTooltipContainer{
+.dwidget .dijitTooltipContainer{
   background-image:none;
   border: 1px solid rgba(82, 168, 236, 0.8);
   background-color:white;
@@ -78,7 +78,7 @@ input:-moz-placeholder {
           box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
-.form .dijitTextBox{
+.dwidget .dijitTextBox{
   background:none;
 
   border: 1px solid #DDD;
@@ -100,43 +100,43 @@ input:-moz-placeholder {
           transition: all 0.2s;
 }
 
-.form .queryTextBox{
+.dwidget .queryTextBox{
   background: #FFF url("img/searchIcon.png") no-repeat 7px center;
   padding: 4px 10px 4px 25px;
 }
 
-.form .roundTextBox{
+.dwidget .roundTextBox{
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
           border-radius: 20px;
 }
 
-.form .dijitTextBox.expandableMinimal{
+.dwidget .dijitTextBox.expandableMinimal{
   width:0px;
 }
 
-.form .dijitTextBox.expandableMinimal .dijitCloseButton{
+.dwidget .dijitTextBox.expandableMinimal .dijitCloseButton{
   display:none;
 }
 
-.form .dijitTextBoxFocused.expandableMinimal{
+.dwidget .dijitTextBoxFocused.expandableMinimal{
   width:200px;
 }
 
-.form .dijitTextBoxFocused.expandableMinimal .dijitCloseButton{
+.dwidget .dijitTextBoxFocused.expandableMinimal .dijitCloseButton{
   display:inherit;
 }
 
 
-.form .dijitTextBox.expandable{
+.dwidget .dijitTextBox.expandable{
   width:50px;
 }
 
-.form .dijitTextBoxFocused.expandable{
+.dwidget .dijitTextBoxFocused.expandable{
   width:200px;
 }
 
-.form .dijitTextBoxFocused {
+.dwidget .dijitTextBoxFocused {
     border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
 
@@ -148,10 +148,10 @@ input:-moz-placeholder {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
-.form .dijitPopup{
+.dwidget .dijitPopup{
 }
 
-.form .dijitMenu, .form .dijitMenuBar{
+.dwidget .dijitMenu, .dwidget .dijitMenuBar{
   border:1px solid #6dcff6;
   padding:2px;
   background-color:#FFF;
@@ -167,16 +167,16 @@ input:-moz-placeholder {
 
 }
 
-.form .dijitMenuItemHover, .tundra .dijitMenuItemSelected {
+.dwidget .dijitMenuItemHover, .tundra .dijitMenuItemSelected {
   background-color: #6dcff6;
   color: white;
 }
 
-.form .dijitButtonNodeHover,
-.form .dijitToggleButtonHover .dijitButtonNode,
-.form .dijitDropDownButtonHover .dijitButtonNode,
-.form .dijitComboButton .dijitButtonContentsHover,
-.form .dijitComboButton .dijitDownArrowButtonHover {
+.dwidget .dijitButtonNodeHover,
+.dwidget .dijitToggleButtonHover .dijitButtonNode,
+.dwidget .dijitDropDownButtonHover .dijitButtonNode,
+.dwidget .dijitComboButton .dijitButtonContentsHover,
+.dwidget .dijitComboButton .dijitDownArrowButtonHover {
 	/* hover state - inner */
 	/* TODO: change from Hover to Selected so that button is still highlighted while drop down is being used */
 	border-color: #a5beda;
@@ -186,7 +186,7 @@ input:-moz-placeholder {
     cursor:pointer;
 }
 
-.form .dijitComboButton, .form .dijitArrowButton, .form .dijitArrowDownButton{
+.dwidget .dijitComboButton, .dwidget .dijitArrowButton, .dwidget .dijitArrowDownButton{
   color: #08C;
 }
 

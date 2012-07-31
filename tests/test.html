@@ -15,7 +15,7 @@
       var theme = (location.search.indexOf('theme') !== -1);
   	  theme ?
          document.write('<link rel="stylesheet" href="/dwidgets/css/tundra.css" \/>') :
-         document.write('<link rel="stylesheet" href="/dwidgets/css/form.css" \/>');
+         document.write('<link rel="stylesheet" href="/dwidgets/css/dwidget.css" \/>');
     </script>
 
     <style>
@@ -44,17 +44,13 @@
     <script>
       var djConfig = {
         debug:1,
-        async: 1,
-        packages: [{
-          location: '/form',
-          name: 'form'
-        }]
+        async: 1
       };
     </script>
     <script src="/dojo/dojo.js"></script>
   </head>
 
-  <body class="tundra form container">
+  <body class="tundra dwidget container">
 
     <div class="marketing">
       <div class="nav nav-pills pull-right">
@@ -115,11 +111,11 @@
         <h3>Expandable Textbox</h3>
         <p>Add <code>.expandableMinimal</code> to make the textbox
           expandable and of initial minimal size. Or define the width yourself:</p>
-        <pre><code>.form .dijitTextBox.expandableMinimal{
+        <pre><code>.dwidget .dijitTextBox.expandableMinimal{
   width:0px;
 }
 
-.form .dijitTextBoxFocused.expandableMinimal{
+.dwidget .dijitTextBoxFocused.expandableMinimal{
   width:200px;
 }</code></pre>
 
