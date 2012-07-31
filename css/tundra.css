@@ -1,5 +1,5 @@
 /* overwrite input styles from bootstrap */
-.form input, .form input:focus{
+.dwidget input, .dwidget input:focus{
   border: none;
   padding:0;
   margin:0;
