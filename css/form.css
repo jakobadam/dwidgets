@@ -11,7 +11,7 @@ input:-moz-placeholder {
   padding:0;
   margin:0;
   height:auto;
-  outline:0; /* FOR IE*/
+  outline:0; /* FOR IE9*/
 
   -webkit-box-shadow:none;
      -moz-box-shadow:none;
@@ -112,12 +112,21 @@ input:-moz-placeholder {
 }
 
 .form .dijitTextBox.expandableMinimal{
-  width:20px;
+  width:0px;
+}
+
+.form .dijitTextBox.expandableMinimal .dijitCloseButton{
+  display:none;
 }
 
 .form .dijitTextBoxFocused.expandableMinimal{
   width:200px;
 }
+
+.form .dijitTextBoxFocused.expandableMinimal .dijitCloseButton{
+  display:inherit;
+}
+
 
 .form .dijitTextBox.expandable{
   width:50px;
