@@ -7,6 +7,10 @@ define([
     return declare('dwidgets.form.TextBox', [TextBox], {
         templateString: template,
 
+        // always enable so _handleOnChange is called on every input
+        // setting the deselect button.
+        intermediateChanges: true,
+
         postCreate: function(){
             this.inherited(arguments);
             this.connect(this.deselectNode, "onclick", "_onDeselectClick");
