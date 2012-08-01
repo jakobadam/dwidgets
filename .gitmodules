@@ -10,3 +10,6 @@
 [submodule "util"]
 	path = util
 	url = git://github.com/dojo/util.git
+[submodule "dwidgets"]
+	path = dwidgets
+	url = git://github.com/jakobadam/dwidgets.git
